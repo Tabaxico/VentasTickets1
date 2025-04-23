@@ -1,0 +1,110 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ffff;
+    color: #1a1a1a;
+}
+
+
+.contenedor-seccion{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em 1em;
+}
+
+header{
+background-color: black;
+color: white;
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 150;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.nav a:hover,
+.nav .active{
+    background-color: #e10073 
+}
+
+.hero{
+    background: linear-gradient(to right, #1a1a1a, #4a4a4a);
+    color: white;
+    text-align: center;
+    padding: 4em 1em; 
+}
+
+.hero h1{
+text-align: 2.5em;
+padding: 0.5em;
+}
+
+.eventos{
+    margin-bottom: 3em 0;
+    align-content: center;
+}
+
+.evento-grid{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.evento-card{
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-content: center;
+}
+
+.evento-card img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.btn-comprar{
+    gap: 1em;
+    display: flex;
+    background-color: #e10073;
+    color: white;
+    padding: 0.7em 1.5em;
+    border-radius: 8px;
+    list-style: none;
+    font-weight: bold;
+}
