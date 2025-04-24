@@ -12,10 +12,12 @@
 <body>
 
   <header >
-    <div class="logo">
-      <img src="img/logo.png" alt="PuntoTicket">
-      <nav>
-        <ul>
+    <div class="header-content">
+     <div class="logo">
+       <img src="img/logo.png" alt="PuntoTicket">
+     </div>
+      <nav class="navbar">
+        <ul class="nav">
           <li><a href="#inicio">Inicio </a></li>
           <li><a href="#eventos">Eventos</a></li>
           <li><a href="#equipo">Equipo</a></li>
@@ -27,40 +29,62 @@
 
   <main>
 
-    <section>
-      <div>
+    <section class="hero" id="inicio">
+      <div class="contenedor-seccion">
         <h1>Compra tus entradas favoritas</h1>
         <p>Conciertos, festivales, obras de teatro y más</p>
       </div>
     </section>
 
-    <section id="#eventos">
+    <section class="eventos" id="eventos">
       <h2>Eventos Destacados</h2>
-      <div>
-        <article>
-          <img src="img/evento1.jpg" alt="Bad Bunny">
+      <div class="evento-grid">
+        <article class="evento-card">
+          <img src="img/evento1.jpg" alt="MR BUNGLE">
           <p>Movistar Arena - Santiago / Heavy Metal</p>
           <h3>MR BUNGLE</h3>
           <p>08 de octubre 2025</p>
-          <a href="#">Comprar Entrada</a>
+          <a href="#"class="btn-comprar">Comprar Entrada</a>
         </article>
-        <article>
-          <img src="img/evento2.jpg" alt="Festival Primavera">
+        <article class="evento-card">
+          <img src="img/evento2.jpg" alt="Trascender - Ley de Murph">
           <p>Teatro Oriente - Providencia / Podcast</p>
           <h3>Trascender - Ley de Murphy</h3>
           <p>29 de abril 2025 - 27 de mayo 2025</p>
-          <a href="#">Comprar Entrada</a>
+          <a href="#"class="btn-comprar">Comprar Entrada</a>
         </article>
-        <article>
-          <img src="img/evento3.jpg" alt="Ana Tijoux">
+        <article class="evento-card">
+          <img src="img/evento3.jpg" alt="Duki - World Tour">
           <p>Movistar Arena - Santiago / Urbano</p>
           <h3>Duki - World Tour</h3>
           <p>05 de julio 2025 - 06 de julio 2025</p>
-          <a href="#">Comprar Entrada</a>
+          <a href="#"class="btn-comprar">Comprar Entrada</a>
         </article>
       </div>
     </section>
-    <section id="#contacto">
+
+    <section class="equipo" id="equipo">
+      <h2>Organizadores y Producción</h2>
+      <div class="equipo-grid">
+        <article class="equipo-card">
+          <img src="img/persona1.png" alt="Camila Rios">
+          <h3>Camila Rios</h3>
+          <p>Productora General</p>
+        </article>
+        <article class="equipo-card">
+          <img src="img/persona2.png" alt="Martín López">
+          <h3>Martín López</h3>
+          <p>Director Técnico</p>
+        </article>
+        <article class="equipo-card">
+          <img src="img/persona3.png" alt="Sofia Valenzuela">
+          <h3>Sofia Valenzuela</h3>
+          <p>Gestora Cultural</p>
+        </article>
+      </div>
+    </section>
+    <section class="contacto" id="contacto">
+      <div class="contenedor-seccion">
       <aside>
         <h2>Contacto</h2>
         <p>800 20 20 20</p>
@@ -90,8 +114,42 @@
           <button type="submit">Enviar</button>
         </fieldset>
       </form>
+    </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="contenedor-seccion footer-grid">
+      <div class="footer-col">
+        <img src="img/logo.png" alt="Logo TicketUp" class="footer-logo">
+      </div>
+      <div class="footer-col">
+        <h4>CONÓCENOS</h4>
+        <ul>
+          <li><a href="#">Acerca de nosotros</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Código de ética</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>TRABAJEMOS JUNTOS</h4>
+        <ul>
+          <li><a href="#">¿Tienes un evento?</a></li>
+          <li><a href="#">Ventas especiales</a></li>
+          <li><a href="#">Envíanos tu CV</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONVERSEMOS</h4>
+        <div class="social-icons">
+          <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="img/whatsapp.svg" alt="whatsapp"></a>
+        </div>
+        <a href="#" class="btn-ayuda">Centro de ayuda</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
